@@ -4,8 +4,7 @@
 
 body {
     max-width: 1440px;
-    margin: auto;
-    padding: 0;
+    margin: 0px;
     font-family: 'Roboto', sans-serif;
     background-color: #FFFFFF;
 }
@@ -35,6 +34,17 @@ p {
 
 @media all and (max-width: 767px) { /*Mobile*/
 
+/*header {
+   box-shadow: 0px 2px 4px grey;
+}*/
+
+.logo{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
 .restaurants{
     background-color: #f6f6f6;
 }
@@ -50,19 +60,37 @@ p {
 .card{
     width: 100%;
     display: flex;
+    flex-direction: column;
     margin-bottom: 20px;
 }
 
-.card img{
-    width: 100%;
+.restcard{
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+    background-color: #FFFFFF;
+}
+
+.card .restcard img{
     object-fit: cover;
-    border-radius: 40px 40px 0 0;
+    height: 200px;
+    border-radius: 30px 30px 0 0;
 }
 
 .figcaption{
     text-decoration: none;
+}
 
-
+.card span {
+    position: absolute;
+    right: 10px;
+    background-color: #99E2D0;
+    color: #2FAF94;
+    padding: 0.5rem;
+    width: 65px;
+    font-size: 17px;
+    font-weight: 500;
+    font-family: 'roboto', sans-serif;
 }
 
 
