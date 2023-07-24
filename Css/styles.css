@@ -9,40 +9,21 @@ body {
     background-color: #FFFFFF;
 }
 
-nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 6rem;
-    background-color: #FFFFFF;
-    padding-top: 40px;
-}
-
-#logo {
-    width: 100%;
+.nav-bar {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #EAEAEA;
 }
-
-p {
-    font-family: 'Roboto', sans-serif;
-}
-
-
-
-
-@media all and (max-width: 767px) { /*Mobile*/
 
 /* Partie HEADER */
 
 header {
-   box-shadow: 0px 2px 4px grey;
+   box-shadow: 0 0 .5rem rgba(0,0,0,.25);
    background-color: #FFFFFF;
 }
 
 .logo{
-    width: 100%;
     display: flex;
     justify-content: center;
     padding: 2rem 0rem 1rem 0rem;
@@ -50,35 +31,28 @@ header {
 
 /* Barre de Navigation ville */
 
-.nav-bar{
+.search-bar{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 1rem 0rem;
-    background-color: #EAEAEA;
 }
 
 .fa-location-dot{
-    color: #2FAF94;
+    color: #353535;
     font-size: min(2rem, 5vw);
 }
 
 form input {
-    font-size: min(24px, 3vw);
-    font-weight: bold;
+    font-size: min(25px, 4vw);
     width: 100%;
-    padding: 4% 0% 4% 9%;
+    font-weight: 500;
+    padding: 3% 0% 3% 6%;
+    background-color: #EAEAEA;
+    color: #353535;
+    border: none;
 }
 
-.search-bar{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
 
-.input{
-   border: none;
-}
 
 /* Section Explorer */
 .Explorer{
@@ -88,9 +62,42 @@ form input {
     align-items: center;
     padding: 0 1rem;
     background-color: #F6F6F6;
-    padding-top: 20px;
+    padding-top: 10px;
 }
 
+.Bold{
+    text-align: center;
+    font-size: min(4rem, 6vw);
+    font-weight: 700;
+    margin: 0;
+    margin-top: 1.5rem;
+    padding: 0 1rem;
+}
+
+.subtitle{
+    text-align: center;
+    font-size: min(2rem, 4vw);
+    font-weight: 300;
+    margin: 10px 0px;
+    padding: 0 1rem;
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background-color: linear-gradient(#FF79DA 100%, #9356DC 100%);*/ /*problème d'affichage du gradient*/
+    background-color: #FF79DA;
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: min(25px, 4vw);
+    font-weight: 500;
+    width: 100%;
+    height: 90px;
+    border-radius: 50px;
+    margin: 1rem 0rem 5rem 0rem;
+    padding: 0 3rem;
+}
 
 /* Section Fonctionnement */
 
@@ -101,7 +108,7 @@ form input {
 .Menu h2{
     display: flex;
     justify-content: flex-start;
-    font-size: 30px;
+    font-size: 35px;
     font-weight: 700;
     margin: 1rem 0rem 0rem 1rem;
 }
@@ -131,7 +138,7 @@ form input {
     background-color: #f6f6f6;
 }
 
-.restaurants h1{
+.restaurants h2{
     font-size: 50px;
     font-weight: 700;
     padding-left: 40px;
@@ -145,14 +152,15 @@ form input {
     flex-direction: column;
 }
 
-.restcard{
+.rest{
     display: flex;
     flex-direction: column;
     border-radius: 30px;
     background-color: #FFFFFF;
+    text-decoration: none;
 }
 
-.card .restcard img{
+.card .rest img{
     object-fit: cover;
     height: 200px;
     border-radius: 30px 30px 0 0;
@@ -175,5 +183,7 @@ form input {
 }
 
 
+
+@media all and min-width(768px){
 
 }
