@@ -35,18 +35,20 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: #EAEAEA;
+    padding: 2rem 0rem
 }
 
 .fa-location-dot{
     color: #353535;
-    font-size: min(2rem, 5vw);
+    font-size: min(4rem, 4vw);
 }
 
-form input {
-    font-size: min(25px, 4vw);
-    width: 100%;
+input {
+    text-align: center;
+    font-size: min(4rem, 4vw);
+    width: 40%;
     font-weight: 500;
-    padding: 3% 0% 3% 6%;
     background-color: #EAEAEA;
     color: #353535;
     border: none;
@@ -67,82 +69,119 @@ form input {
 
 .Bold{
     text-align: center;
-    font-size: min(4rem, 6vw);
+    font-size: min(4rem, 7vw);
     font-weight: 700;
+    width: 85%;
     margin: 0;
     margin-top: 1.5rem;
-    padding: 0 1rem;
 }
 
 .subtitle{
     text-align: center;
-    font-size: min(2rem, 4vw);
+    font-size: min(3rem, 5vw);
     font-weight: 300;
-    margin: 10px 0px;
-    padding: 0 1rem;
+    width: 100%;
 }
 
 .button{
     display: flex;
     justify-content: center;
     align-items: center;
-    /*background-color: linear-gradient(#FF79DA 100%, #9356DC 100%);*/ /*problème d'affichage du gradient*/
+    background: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
     background-color: #FF79DA;
+    box-shadow: 0px 0px 10px rgba(0,0,0,.25);
     color: #FFFFFF;
     text-decoration: none;
-    font-size: min(25px, 4vw);
+    font-size: min(3rem, 4vw);
     font-weight: 500;
-    width: 100%;
-    height: 90px;
+    width: 60%;
+    height: 100px;
     border-radius: 50px;
-    margin: 1rem 0rem 5rem 0rem;
-    padding: 0 3rem;
+    margin: 1rem 0rem 6rem 0rem;
 }
 
 /* Section Fonctionnement */
 
 .Menu{
-    
+    margin-bottom: 8rem;
 }
 
 .Menu h2{
     display: flex;
     justify-content: flex-start;
-    font-size: 35px;
+    font-size: min(4rem, 7vw);
     font-weight: 700;
-    margin: 1rem 0rem 0rem 1rem;
+    margin: 5rem 0rem 4rem 2rem;
+}
+
+.Threemenus{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+}
+
+.Threemenus li{
+    display: flex;
+    align-items: center;
+    gap: 3rem;
+    width: 90%;
+    background-color: #F6F6F6;
+    border-radius: 35px;
+    padding: 1.5rem 0;
+    box-shadow: 0px 4px 15px rgba(0,0,0,.25);
+    font-size: 1.5rem;
+}
+
+.Threemenus li span{
+    position: relative;
+    border: 1px solid #9356dc;
+    border-radius: 50%;
+    margin-left: -1.5rem;
+    padding: 0.5rem 1rem;
+    background-color: #9356dc;
+    color: #F6F6F6;
 }
 
 
+.Threemenus li span:hover{
+    cursor: pointer;
+    background-color: #FF79DA;
+    border: 1px solid #FF79DA;
+}
 
+.fa-mobile-screen-button{
+    color: #7E7E7E;
+    font-size: 2rem;
+}
 
+.fa-list-ul{
+    color: #7E7E7E;
+    font-size: 2rem;
+}
 
+.fa-store{
+    color: #9356dc;
+    font-size: 2rem;
+}
 
+.Threemenus li p{
+    font-size: min(2rem, 4vw);
+    font-weight: 500;
+    color: #000000;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/* Section Restaurants */
 
 .restaurants{
     background-color: #f6f6f6;
+    padding: 6rem 2rem;
 }
 
 .restaurants h2{
     font-size: 50px;
     font-weight: 700;
-    padding-left: 40px;
-    padding-top: 2em;
 }
 
 
@@ -150,6 +189,7 @@ form input {
     width: 100%;
     display: flex;
     flex-direction: column;
+    padding-bottom: 2rem;
 }
 
 .rest{
@@ -162,28 +202,106 @@ form input {
 
 .card .rest img{
     object-fit: cover;
-    height: 200px;
+    max-height: 350px;
+    /*height: auto;*/
+    /*min-height: 150px;*/
     border-radius: 30px 30px 0 0;
-}
-
-.description-text p {
-    text-decoration: none;
-    
 }
 
 .card span {
     position: absolute;
-    right: 10px;
+    right: 4rem;
+    margin-top: 2rem;
     background-color: #99E2D0;
-    color: #2FAF94;
+    color: #008766;
+    border-radius: 5px;
     padding: 0.5rem;
-    font-size: 17px;
+    font-size: min(3rem, 4vw);
     font-weight: 500;
-    font-family: 'roboto', sans-serif;
 }
 
+.description{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1.5rem;
+}
 
+.description-text h3{
+    font-size: min(4rem, 5vw);
+    font-weight: 700;
+    color: #000000;
+    margin: 1rem 0rem 0rem 2rem;
+}
 
-@media all and min-width(768px){
+.description-text p{
+    font-size: min(3rem, 4vw);
+    font-weight: 300;
+    color: #000000;
+    margin: 0.5rem 0rem 0rem 2rem;
+}
+
+.fa-heart{
+    font-size: min(4rem, 5vw);
+    margin-right: 2rem;
+}
+
+.fa-heart:hover{
+    cursor: pointer;
+    background: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
+}
+
+/* Section Footer */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #353535;
+    padding: 2rem 0rem;
+}
+
+.footer-logo h1{
+    font-family: 'shrikhand', sans-serif;
+    font-weight: 400;
+    font-size: min(4rem, 5vw);
+    display: flex;
+    padding: 0rem 3rem;
+    margin-top: 0rem;
+    color: #FFFFFF;
+}
+
+.footer-liens {
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 3rem;
+    margin-top: 1rem;
+    color: #FFFFFF;
+}
+
+.footer-liens a{
+    text-decoration: none;
+    font-size: min(3rem, 4vw);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #FFFFFF;
+}
+
+.footer-liens .First{
+    font-weight: 500;
+}
+
+.footer-liens .Second{
+    font-weight: 300;
+}
+
+.footer-liens a .fa-utensils{
+    margin-right: 2rem;
+}
+
+.footer-liens a .fa-handshake-angle{
+    margin-right: 1.3rem;
+}
+
+@media all and (min-width768px){
 
 }
