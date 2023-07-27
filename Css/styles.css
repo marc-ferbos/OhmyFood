@@ -73,7 +73,7 @@ input {
     padding-top: 10px;
 }
 
-.Bold{
+.Explorer h2{
     text-align: center;
     font-size: min(4rem, 7vw);
     font-weight: 700;
