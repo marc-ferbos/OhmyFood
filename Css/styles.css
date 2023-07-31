@@ -29,9 +29,15 @@ header {
     padding: 2rem 0rem 1rem 0rem;
 }
 
-.logo img{
+.logo a{
+    display: block;
+    text-align: center;
     width: 100%;
-    max-width: 350px;
+}
+
+.logo img{
+    width: 50%;
+    min-width: 180px;
     height: auto;
 }
 
@@ -101,7 +107,7 @@ input {
     font-size: min(3rem, 4vw);
     font-weight: 500;
     width: 60%;
-    height: 100px;
+    padding: 25px 10px;
     border-radius: 50px;
     margin: 1rem 0rem 6rem 0rem;
 }
@@ -131,13 +137,17 @@ input {
 .Threemenus li{
     display: flex;
     align-items: center;
-    gap: 3rem;
+    gap: 1rem;
     width: 90%;
     background-color: #F6F6F6;
     border-radius: 35px;
     padding: 1.5rem 0;
     box-shadow: 0px 4px 15px rgba(0,0,0,.25);
     font-size: 1.5rem;
+}
+
+.Threemenus li i:hover{
+    color: #9356DC;
 }
 
 .Threemenus li span{
@@ -168,7 +178,7 @@ input {
 }
 
 .fa-store{
-    color: #9356dc;
+    color: #7E7E7E;
     font-size: 2rem;
 }
 
