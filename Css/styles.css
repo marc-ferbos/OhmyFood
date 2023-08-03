@@ -341,10 +341,6 @@ footer{
 /*<!---------------------------------------- Media Queries Desktop ------------------------------------>*/
 
 
-@media all and (min-width:768px){
-
-}
-
 @media all and (min-width:1024px){
 
 
@@ -493,6 +489,7 @@ footer{
 
     .card{
         width: 45%;
+        position: relative;
         display: flex;
         flex-direction: column;
         padding-bottom: 4rem;
@@ -501,6 +498,7 @@ footer{
     .card span {
         position: absolute;
         margin-top: 1rem;
+        right: 10px;
         font-size: min(2rem, 1.5vw);
     }
     
@@ -522,15 +520,20 @@ footer{
         margin: 0.5rem 0rem 0rem 2rem;
     }
     
+    .description-icon {
+        position: relative;
+    }
+
     .description-icon i{
         color: #9356DC;
-        position: relative;
-        right: 0rem;
-        font-size: min(2.5rem, 5vw);
+        position: absolute;
+        top: -1rem;
+        right: 1rem;
+        font-size: min(2rem, 5vw);
     }
 
     .my-heart-full{
-        opacity: 1;
+        opacity: 0;
     }
 
     .my-heart-full:hover{
