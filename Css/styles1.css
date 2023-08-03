@@ -1,3 +1,204 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    max-width: 1440px;
+    margin: 0px;
+    font-family: 'Roboto', sans-serif;
+    background-color: #FFFFFF;
+}
+
+/*-------------------------- Header---------------------------- */
+
+.fa-arrow-left{
+    position: absolute;
+    height: 100%;
+    left: 3rem;
+    top: 3.5rem;
+    color: #353535;
+    font-size: 3rem;
+}
+
+.header{
+    background-color: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 2rem 0rem 2rem 0rem;
+}
+
+.logo img {
+    width: 45%;
+    min-width: 180px;
+    height: auto;
+}
+
+/*-------------------------- Image Banière ---------------------------- */
+.baniere img{
+    display: block;
+    object-fit: cover;
+    width: 100%;
+    height: 45vh;
+}
+
+/*-------------------------- Section Main  ---------------------------- */
+
+main{
+    background-color: #F6F6F6;
+}
+
+.title-menu1{
+    background-color: red;
+}
+
+.layout-heart{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 2rem 2rem 0rem 0rem;
+    background-color: green;
+}
+
+.layout-heart h1{
+    font-family: 'shrikhand', sans-serif;
+    font-size: min(5rem, 7vw);
+    color: #101010;
+    margin-left: 2rem;
+    font-weight: 400;
+}
+
+.layout-heart i{
+    position: absolute;
+    right: 5rem;
+    font-size: min(4rem, 5vw);
+}
+
+.my-heart-full{
+    opacity: 0;
+}
+
+.my-heart-full:hover{
+    opacity: 1;
+}
+
+/*--------Section Main 1--------*/
+
+.Page{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 0rem;
+}
+
+.entrees h3{
+    font-weight: 300;
+    font-size: min(2.5rem, 5vw);
+    color: #101010;
+    margin-left: 2rem;
+    font-weight: 400;
+}
+
+.article-menu{
+    display: flex;
+    flex-direction: column;
+    background-color: #FFFFFF;
+    text-decoration: none;
+    padding: 0rem 2rem;
+}
+
+.Détails{
+    width: 100%;
+    background-color: #FFFFFF;
+    border-radius: 35px;
+    padding: 1.5rem 0;
+    box-shadow: 0px 4px 15px rgba(0,0,0,.25);
+    margin-bottom: 0.5rem;
+}
+
+.price{
+    position: absolute;
+    right: 2rem;
+}
+
+
+
+
+/* Section Footer */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    background-color: #353535;
+    padding: 2rem 0rem;
+}
+
+.footer-logo h1{
+    font-family: 'shrikhand', sans-serif;
+    font-weight: 400;
+    font-size: min(4rem, 5vw);
+    display: flex;
+    padding: 0rem 3rem;
+    margin-top: 0rem;
+    color: #FFFFFF;
+}
+
+.footer-liens {
+    display: flex;
+    flex-direction: column;
+    padding: 0rem 3rem;
+    margin-top: 1rem;
+    color: #FFFFFF;
+}
+
+.footer-liens a{
+    text-decoration: none;
+    font-size: min(3rem, 4vw);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #FFFFFF;
+}
+
+.footer-liens .First{
+    font-weight: 500;
+}
+
+.footer-liens .Second{
+    font-weight: 300;
+}
+
+.footer-liens a .fa-utensils{
+    width: 50px;
+}
+
+.footer-liens a .fa-handshake-angle{
+    width: 50px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @media all and (max-width: 767px) { /*Mobile*/
 
 p{

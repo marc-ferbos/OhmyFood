@@ -225,7 +225,6 @@ input {
 
 .card span {
     position: absolute;
-    right: 4rem;
     margin-top: 2rem;
     background-color: #99E2D0;
     color: #008766;
@@ -256,15 +255,35 @@ input {
     margin: 0.5rem 0rem 0rem 2rem;
 }
 
-.fa-heart{
+.description-icon i{
+    color: #9356DC;
+    position: absolute;
+    right: 4rem;
     font-size: min(4rem, 5vw);
-    margin-right: 2rem;
 }
 
-.fa-heart:hover{
-    cursor: pointer;
-    background: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
+.my-heart-full{
+    opacity: 0;
 }
+
+.my-heart-full:hover{
+    position: absolute;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 1;
+}
+
+
+.my-heart-full:hover{
+    opacity: 1;
+    color: transparent;
+    background-image: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+
 
 /* Section Footer */
 
@@ -396,7 +415,7 @@ footer{
     /* Section Fonctionnement */
     
     .Menu{
-        margin-bottom: 4rem;
+        margin: 2.5rem 6rem 4rem 2rem;
     }
     
     .Menu h2{
@@ -451,12 +470,12 @@ footer{
     /* Section Restaurants */
     
     .restaurants{
-        padding: 1rem 2rem;
+        padding: 1rem 4rem;
     }
     
     .restaurants h2{
         font-size: min(2.5rem, 5vw);
-        margin: 2.5rem 0rem 3rem 4rem;
+        margin: 2.5rem 0rem 3rem 6rem;
     }
     
     .Cards-restaurant{
@@ -464,7 +483,7 @@ footer{
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
-        margin: 2.5rem 0rem 3rem 4rem;
+        margin: 2.5rem 6rem -3rem 6rem;
     }
 
     .card .rest img{
@@ -473,7 +492,7 @@ footer{
     }
 
     .card{
-        width: 48%;
+        width: 45%;
         display: flex;
         flex-direction: column;
         padding-bottom: 4rem;
@@ -483,13 +502,6 @@ footer{
         position: absolute;
         margin-top: 1rem;
         font-size: min(2rem, 1.5vw);
-
-        /*margin-top: 1rem;
-        font-size: min(2rem, 1.5vw);
-        position: relative;
-        left: 31rem;
-        top: -13rem;
-        width: 17%;*/
     }
     
     .description{
@@ -510,62 +522,80 @@ footer{
         margin: 0.5rem 0rem 0rem 2rem;
     }
     
-    .fa-heart{
-        font-size: min(2.5rem, 2vw);
-        padding-top: 1.5rem;
+    .description-icon i{
+        color: #9356DC;
+        position: relative;
+        right: 0rem;
+        font-size: min(2.5rem, 5vw);
+    }
+
+    .my-heart-full{
+        opacity: 1;
+    }
+
+    .my-heart-full:hover{
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        opacity: 1;
+    }
+
+    .my-heart-full:hover{
+        opacity: 1;
+        color: transparent;
+        background-image: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
+        background-clip: text;
+        -webkit-background-clip: text;
     }
     
+    
+    
+
     /* Section Footer */
     
     footer{
-        display: flex;
-        flex-direction: column;
-        background-color: #353535;
-        padding: 2rem 0rem;
+        padding: 4rem 0rem 1rem 0rem;
     }
     
     .footer-logo h1{
-        font-family: 'shrikhand', sans-serif;
-        font-weight: 400;
-        font-size: min(4rem, 5vw);
+        font-size: 22px;
+        margin-bottom: -4rem;
         display: flex;
-        padding: 0rem 3rem;
-        margin-top: 0rem;
+        justify-content: flex-end;
         color: #FFFFFF;
     }
     
     .footer-liens {
         display: flex;
-        flex-direction: column;
-        padding: 0rem 3rem;
+        justify-content: flex-end;
+        flex-direction: row;
+        width: 100%;
+        padding: 0rem 8rem 0rem 0rem;
         margin-top: 1rem;
         color: #FFFFFF;
     }
     
     .footer-liens a{
-        text-decoration: none;
-        font-size: min(3rem, 4vw);
-        font-weight: 700;
-        margin-bottom: 0.5rem;
-        color: #FFFFFF;
+        font-size: 15px;
     }
     
     .footer-liens .First{
         font-weight: 500;
+        width: 200px;
     }
     
     .footer-liens .Second{
         font-weight: 300;
+        width: 120px;
     }
     
     .footer-liens a .fa-utensils{
-        width: 50px;
+        width: 15%;
     }
     
     .footer-liens a .fa-handshake-angle{
-        width: 50px;
+        width: 15%;
     }
-
 
 }
 
