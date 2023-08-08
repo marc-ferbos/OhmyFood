@@ -229,6 +229,7 @@ input {
     color: #008766;
     border-radius: 5px;
     padding: 0.5rem;
+    right: 4rem;
     font-size: min(3rem, 4vw);
     font-weight: 500;
 }
@@ -410,7 +411,7 @@ footer{
     /* Section Fonctionnement */
     
     .Menu{
-        margin: 2.5rem 6rem 4rem 2rem;
+        margin: 2.5rem 6rem 4rem 4rem;
     }
     
     .Menu h2{
