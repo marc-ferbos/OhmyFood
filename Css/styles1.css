@@ -4,7 +4,7 @@
 
 body {
     max-width: 1440px;
-    margin: 0px;
+    margin: 0px auto;
     font-family: 'Roboto', sans-serif;
     background-color: #FFFFFF;
 }
@@ -14,7 +14,7 @@ body {
 .fa-arrow-left{
     position: absolute;
     height: 100%;
-    left: 3rem;
+    left: 4rem;
     top: 3.5rem;
     color: #353535;
     font-size: 3rem;
@@ -82,6 +82,7 @@ main{
 
 .my-heart-full{
     opacity: 0;
+    transition: all 0.5s ease-in-out;
 }
 
 .my-heart-full:hover{
@@ -90,7 +91,6 @@ main{
     -webkit-background-clip: text;
     color: transparent;
     opacity: 1;
-    transition: all 0.5s ease-in-out;
 }
 
 /*--------Section Main 1--------*/
@@ -275,6 +275,135 @@ footer{
 }
 
 
+@media all and (min-width:1024px){
+
+.fa-arrow-left{
+    font-size: 1.5rem;
+}
+
+.logo img{
+    width: 20%;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 75%;
+    margin: -4rem 10rem 0rem 10rem;
+}
+
+.title-menu1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.layout-heart h1{
+    font-size: min(2rem, 3vw);
+    padding-left: 0rem;
+}
+
+.layout-heart i{
+    font-size: min(2rem, 3vw);
+    top: 4.5rem;
+    right: 10rem;
+}
+
+.Page h3 {
+    font-size: 20px;
+    margin-bottom: 0.5rem;
+}
+
+hr {
+    width: 8%;
+    border: 2px solid #99E2D0;
+    margin-bottom: 1rem;
+}
+
+.article-menu {
+    margin: 0rem 2rem;
+}
+
+.Détails{
+    margin-bottom: 1rem;
+    border-radius: 20px;
+}
+
+.Détails h4 {
+    font-size: 20px;
+    margin: 1rem 0rem -1rem 1.5rem;
+}
+
+.Détails p {
+    font-size: 20px;
+    margin: 1.5rem 0rem 1rem 1.5rem;
+}
+
+.price {
+    font-size: 20px;
+    right: 1rem;
+    bottom: 2.5rem;
+}
+
+.Page{
+    padding: 0rem 8rem;
+}
+
+.button1{
+    font-size: min(1rem, 2vw);
+    width: 20%;
+    padding: 15px 10px;
+    margin: 2rem 0rem 3rem 0rem;
+}
+
+/* Section Footer */
+    
+footer{
+    padding: 4rem 0rem 3rem 0rem;
+    width: 100%;
+}
+
+.footer-logo h1{
+    font-size: 22px;
+    margin-bottom: -4rem;
+    display: flex;
+    justify-content: flex-end;
+    color: #FFFFFF;
+}
+
+.footer-liens {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    width: 100%;
+    padding: 0rem 8rem 0rem 0rem;
+    margin-top: 1rem;
+    color: #FFFFFF;
+}
+
+.footer-liens a{
+    font-size: 15px;
+}
+
+.footer-liens .First{
+    font-weight: 500;
+    width: 200px;
+}
+
+.footer-liens .Second{
+    font-weight: 300;
+    width: 120px;
+}
+
+.footer-liens a .fa-utensils{
+    width: 15%;
+}
+
+.footer-liens a .fa-handshake-angle{
+    width: 15%;
+}
+    
 
 
 
@@ -282,22 +411,6 @@ footer{
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-@media all and (max-width: 767px) { /*Mobile*/
-
-p{
-    font-family: 'shrikhand', sans-serif;
 }
 
 
@@ -305,4 +418,8 @@ p{
 
 
 
-}
+
+
+
+
+

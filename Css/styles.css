@@ -67,7 +67,6 @@ input {
 }
 
 
-
 /* Section Explorer */
 .Explorer{
     display: flex;
@@ -350,17 +349,10 @@ footer{
         
     body {
         max-width: 1440px;
-        margin: 0px;
+        margin: 0 auto;
         font-family: 'Roboto', sans-serif;
         background-color: #FFFFFF;
     }
-    
-    
-    
-    
-    
-    
-    
     
     .logo{
         display: flex;
