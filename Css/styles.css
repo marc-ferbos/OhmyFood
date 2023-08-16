@@ -9,6 +9,84 @@ body {
     background-color: #FFFFFF;
 }
 
+/* Barre Loader */
+
+body .loader {
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    opacity: 0.9;
+    background: #353535;
+    inset: 0;
+    z-index: 1;
+    height: 100vh;
+    font: 4vw/100vh "Shrikhand";
+    text-align: center;
+    color: #FF79DA;
+    animation: stop-loader 0s 4s forwards;
+}
+body .loader span {
+    animation: vaporise 1s both;
+}
+
+@keyframes vaporise {
+    100% {
+        text-shadow: 0 0 40px red;
+  }
+    to {
+        transform: translate3d(20rem, -10rem, 0) rotate(-20deg) scale(1.5);
+        text-shadow: 40px red;
+        opacity: 0;
+    }
+}
+
+@keyframes stop-loader {
+  to {
+    transform: scale(0);
+  }
+}
+
+body .loader span:nth-of-type(1) {
+    animation-delay: 1.2s;
+  }
+body .loader span:nth-of-type(2) {
+    animation-delay: 1.4s;
+  }
+body .loader span:nth-of-type(3) {
+    animation-delay: 1.6s;
+  }
+body .loader span:nth-of-type(4) {
+    animation-delay: 1.8s;
+  }
+body .loader span:nth-of-type(5) {
+    animation-delay: 2s;
+  }
+body .loader span:nth-of-type(6) {
+    animation-delay: 2.2s;
+  }
+body .loader span:nth-of-type(7) {
+    animation-delay: 2.4s;
+  }
+body .loader span:nth-of-type(8) {
+    animation-delay: 2.6s;
+  }
+body .loader span:nth-of-type(9) {
+    animation-delay: 2.8s;
+  }
+body header h1 {
+  font-family: "Shrikhand", cursive;
+  font-size: 2.3rem;
+  margin: 0;
+  padding: 1rem 0;
+  text-align: center;
+}
+/*----------*/
+
+
+
+
+
+
 .nav-bar {
     display: flex;
     justify-content: center;
