@@ -23,7 +23,7 @@ body .loader {
     font: 4vw/100vh "Shrikhand";
     text-align: center;
     color: #FF79DA;
-    animation: stop-loader 0s 4s forwards;
+    animation: stop-loader 1s 3s forwards;
 }
 body .loader span {
     animation: vaporise 1s both;

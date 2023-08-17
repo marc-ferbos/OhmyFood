@@ -126,7 +126,7 @@ hr{
   }
 
 #article_1{
-    animation: apparition 300ms ease-in;
+    animation: apparition 400ms ease-in;
 }
 
 #article_2{
@@ -134,30 +134,30 @@ hr{
 }
 
 #article_3 {
-    animation: apparition 900ms ease-in;
+    animation: apparition 800ms ease-in;
 }
   
 #article_4{
-    animation: apparition 1200ms ease-in;
+    animation: apparition 1000ms ease-in;
 }
 #article_5{
-    animation: apparition 1500ms ease-in;
+    animation: apparition 1200ms ease-in;
 }
 
 #article_6 {
-    animation: apparition 1800ms ease-in;
+    animation: apparition 1400ms ease-in;
 }
   
 #article_7{
-    animation: apparition 2100ms ease-in;
+    animation: apparition 1800ms ease-in;
 }
 
 #article_8{
-    animation: apparition 2400ms ease-in;
+    animation: apparition 2000ms ease-in;
 }
 
 #article_9 {
-    animation: apparition 2700ms ease-in;
+    animation: apparition 2200ms ease-in;
 }
     
 
@@ -168,6 +168,7 @@ hr{
     text-decoration: none;
     position: relative;
     margin: 0rem 2rem;
+    overflow: hidden;
 }
 
 .Détails{
@@ -199,6 +200,44 @@ hr{
     bottom: 5rem;
     color: #353535;
 }
+
+.article-menu:hover .price{
+    right: 7.5rem;
+    transition: 1.5s;
+}
+
+.checkmark{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    border-radius: 0rem 1rem 1rem 0rem;
+    right: -7.5rem;
+    background-color: #99E2D0;
+    color: white;
+    font-size: 2.5rem;
+    width: 15%;
+    height: 85%;
+}
+
+.article-menu:hover .checkmark{
+    right: 0rem;
+    transition: 1.5s;
+}
+
+.article-menu:hover .checkmark i{
+    animation: spin 1s;
+    animation-delay: 0.5s;
+}
+
+@keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
 
 /*---------Bouton COMMANDER---------*/
 
