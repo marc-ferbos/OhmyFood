@@ -259,7 +259,7 @@ input {
         border-radius: 35px;
         padding: 1.5rem 0;
         box-shadow: 0px 4px 15px rgba(0,0,0,.25);
-        font-size: 1.5rem;
+        font-size: 20px;
     }
 }
 
@@ -409,19 +409,30 @@ input {
 
 .my-heart-full {
     opacity: 0;
+    transition: all 0.5s ease-in-out;
 }
 
 .my-heart-full {
     &:hover {
         position: absolute;
-        opacity: 1;
-        color: transparent;
-        background-image: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
         background-clip: text;
         -webkit-background-clip: text;
+        transition: all 0.5s ease-in-out;
+        animation: heart 1s ease-in-out forwards;
     }
 }
 
+@keyframes heart {
+    0% {
+       background-image: none;
+    }
+
+    100% {
+        opacity: 1;
+        color: transparent;
+        background-image: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
+    }
+}
 
 
 /* Section Footer */
@@ -707,22 +718,8 @@ footer {
             font-size: min(2rem, 5vw);
         }
     }
-
-    .my-heart-full{
-        opacity: 0;
-    }
-
-    .my-heart-full:hover{
-        background-clip: text;
-        background-image: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
-        -webkit-background-clip: text;
-        color: transparent;
-        opacity: 1;
-        transition: all 0.5s ease-in-out;
-    }
     
-    
-    
+     
 
     /* Section Footer */
     

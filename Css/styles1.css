@@ -167,16 +167,15 @@ hr{
     background-color: transparent;
     text-decoration: none;
     position: relative;
-    margin: 0rem 2rem;
+    margin: 0.5rem 2rem;
     overflow: hidden;
+    box-shadow: 0px 4px 15px rgba(0,0,0,.25);
+    border-radius: 35px;
 }
 
 .Détails{
     width: 100%;
     background-color: #FFFFFF;
-    border-radius: 35px;
-    box-shadow: 0px 4px 15px rgba(0,0,0,.25);
-    margin-bottom: 2rem;
 }
 
 .Détails h4{
@@ -196,8 +195,9 @@ hr{
 .price{
     position: absolute;
     font-size: 2.5rem;
+    top: 50%;
+    transform:translateY(-50%);
     right: 4rem;
-    bottom: 5rem;
     color: #353535;
 }
 
@@ -217,7 +217,7 @@ hr{
     color: white;
     font-size: 2.5rem;
     width: 15%;
-    height: 85%;
+    height: 100%;
 }
 
 .article-menu:hover .checkmark{
@@ -360,12 +360,7 @@ hr {
     margin-bottom: 1rem;
 }
 
-.article-menu {
-    margin: 0rem 2rem;
-}
-
 .Détails{
-    margin-bottom: 1rem;
     border-radius: 20px;
 }
 
@@ -382,7 +377,6 @@ hr {
 .price {
     font-size: 20px;
     right: 1rem;
-    bottom: 2.5rem;
 }
 
 .article-menu:hover .price{
