@@ -196,13 +196,13 @@ hr{
 .price{
     position: absolute;
     font-size: 2.5rem;
-    right: 3rem;
+    right: 4rem;
     bottom: 5rem;
     color: #353535;
 }
 
 .article-menu:hover .price{
-    right: 7.5rem;
+    right: 9rem;
     transition: 1.5s;
 }
 
@@ -212,7 +212,7 @@ hr{
     align-items: center;
     position: absolute;
     border-radius: 0rem 1rem 1rem 0rem;
-    right: -7.5rem;
+    right: -9.5rem;
     background-color: #99E2D0;
     color: white;
     font-size: 2.5rem;
@@ -385,6 +385,11 @@ hr {
     bottom: 2.5rem;
 }
 
+.article-menu:hover .price{
+    right: 7.5rem;
+    transition: 1.5s;
+}
+
 .Page{
     padding: 0rem 8rem;
 }
@@ -443,12 +448,6 @@ footer{
     width: 15%;
 }
     
-
-
-
-
-
-
 
 }
 
