@@ -349,7 +349,7 @@ input {
 }
 
 .description-icon i {
-  color: #9356DC;
+  color: black;
   position: absolute;
   right: 4rem;
   font-size: min(4rem, 5vw);
@@ -357,27 +357,18 @@ input {
 
 .my-heart-full {
   opacity: 0;
-  transition: all 0.5s ease-in-out;
+  color: transparent;
+  transition: all 1s ease-in-out;
+  background-clip: text;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
 }
 
 .my-heart-full:hover {
-  position: absolute;
-  background-clip: text;
-  -webkit-background-clip: text;
-  transition: all 0.5s ease-in-out;
-  animation: heart 1s ease-in-out forwards;
+  transition: all 1s ease-in-out;
+  opacity: 1;
 }
 
-@keyframes heart {
-  0% {
-    background-image: none;
-  }
-  100% {
-    opacity: 1;
-    color: transparent;
-    background-image: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
-  }
-}
 /* Section Footer */
 footer {
   display: flex;
@@ -571,7 +562,7 @@ footer {
     position: relative;
   }
   .description-icon i {
-    color: #9356DC;
+    color: black;
     position: absolute;
     top: -1rem;
     right: 1rem;

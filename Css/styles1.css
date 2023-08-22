@@ -82,14 +82,15 @@ main{
 
 .my-heart-full{
     opacity: 0;
-    transition: all 0.5s ease-in-out;
+    color: transparent;
+    transition: all 1s ease-in-out;
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-image: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
 }
 
 .my-heart-full:hover{
-    background-clip: text;
-    background-image: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
-    -webkit-background-clip: text;
-    color: transparent;
+    transition: all 1s ease-in-out;
     opacity: 1;
 }
 
@@ -201,33 +202,35 @@ hr{
     color: #353535;
 }
 
-.article-menu:hover .price{
-    right: 9rem;
+.article-menu .price{
     transition: 1.5s;
 }
 
-.checkmark{
+.article-menu:hover .price{
+    right: 9rem;
+}
+
+.checkmark {
     display: flex;
     justify-content: center;
     align-items: center;
     position: absolute;
     border-radius: 0rem 1rem 1rem 0rem;
-    right: -9.5rem;
+    right: -9rem;
     background-color: #99E2D0;
     color: white;
     font-size: 2.5rem;
     width: 15%;
     height: 100%;
+    transition: 1.5s;
 }
 
 .article-menu:hover .checkmark{
     right: 0rem;
-    transition: 1.5s;
 }
 
 .article-menu:hover .checkmark i{
-    animation: spin 1s;
-    animation-delay: 0.5s;
+    animation: spin 2s;
 }
 
 @keyframes spin {
@@ -237,7 +240,20 @@ hr{
     100% {
       transform: rotate(360deg);
     }
-  }
+}
+
+.article-menu .checkmark i{
+    animation: spin-back 2s;
+}
+
+@keyframes spin-back {
+    0% {
+      transform: rotate(360deg);
+    }
+    100% {
+      transform: rotate(0deg);
+    }
+}
 
 /*---------Bouton COMMANDER---------*/
 
@@ -346,7 +362,7 @@ main{
 .layout-heart i{
     font-size: min(2rem, 3vw);
     top: 4.5rem;
-    right: 10rem;
+    right: 13rem;
 }
 
 .Page h3 {
