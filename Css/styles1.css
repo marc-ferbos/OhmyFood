@@ -164,7 +164,6 @@ hr{
 
 .article-menu{
     display: flex;
-    flex-direction: column;
     background-color: transparent;
     text-decoration: none;
     position: relative;
@@ -187,6 +186,8 @@ hr{
 }
 
 .Détails p{
+    overflow: hidden;
+    text-overflow: ellipsis;
     font-size: min(3rem, 4vw);
     color: black;
     margin-left: 2.5rem;
@@ -194,16 +195,15 @@ hr{
 }
 
 .price{
-    position: absolute;
     font-size: 2.5rem;
     top: 50%;
-    transform:translateY(-50%);
     right: 4rem;
     color: #353535;
 }
 
 .article-menu .price{
     transition: 1.5s;
+    width: 10%;
 }
 
 .article-menu:hover .price{
@@ -214,19 +214,18 @@ hr{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
+    margin-right: -15%;
     border-radius: 0rem 1rem 1rem 0rem;
     right: -9rem;
     background-color: #99E2D0;
     color: white;
     font-size: 2.5rem;
     width: 15%;
-    height: 100%;
     transition: 1.5s;
 }
 
 .article-menu:hover .checkmark{
-    right: 0rem;
+    margin-right: 0rem;
 }
 
 .article-menu:hover .checkmark i{
@@ -378,6 +377,7 @@ hr {
 
 .Détails{
     border-radius: 20px;
+    width: 90%;
 }
 
 .Détails h4 {
