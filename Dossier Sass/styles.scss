@@ -2,6 +2,11 @@
     box-sizing: border-box;
 }
 
+$Primary-color: #FF79DA;
+$Secondary-color: #9356DC;
+$Third-color: #99E2D0;
+
+
 .logo {
     display: flex;
     justify-content: center;
@@ -48,7 +53,7 @@ body {
         height: 100vh;
         font: 4vw/100vh "Shrikhand";
         text-align: center;
-        color: #FF79DA;
+        color: $Primary-color;
         animation: stop-loader 1s 3s forwards;
     }
 }
@@ -212,7 +217,7 @@ input {
 
 .button {
     text-align: center;
-    background: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
+    background: linear-gradient(to bottom, $Primary-color 0%, $Secondary-color 100%);
     box-shadow: 0px 0px 10px rgba(0,0,0,.25);
     color: #FFFFFF;
     text-decoration: none;
@@ -266,18 +271,18 @@ input {
 .Threemenus {
     li {
         i:hover {
-            color: #9356DC;
+            color: $Secondary-color;
         }
     }
 }
 
 .Threemenus li span{
     position: relative;
-    border: 1px solid #9356dc;
+    border: 1px solid $Secondary-color;
     border-radius: 50%;
     margin-left: -1.5rem;
     padding: 0.5rem 1rem;
-    background-color: #9356dc;
+    background-color: $Secondary-color;
     color: #F6F6F6;
 }
 
@@ -286,8 +291,8 @@ input {
     li {
         span:hover {
             cursor: pointer;
-            background-color: #FF79DA;
-            border: 1px solid #FF79DA;
+            background-color: $Primary-color;
+            border: 1px solid $Primary-color;
         }
     }
 }
@@ -363,7 +368,7 @@ input {
     span {
         position: absolute;
         margin-top: 2rem;
-        background-color: #99E2D0;
+        background-color: $Third-color;
         color: #008766;
         border-radius: 5px;
         padding: 0.5rem;
@@ -412,7 +417,7 @@ input {
     transition: all 1s ease-in-out;
     background-clip: text;
     -webkit-background-clip: text;
-    background-image: linear-gradient(to bottom, #FF79DA 0%, #9356DC 100%);
+    background-image: linear-gradient(to bottom, $Primary-color 0%, $Secondary-color 100%);
 }
 
 .my-heart-full {
@@ -669,6 +674,7 @@ footer {
             font-size: min(2rem, 1.5vw);
         }
     }
+    
     
     .description{
         display: flex;

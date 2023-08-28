@@ -246,11 +246,11 @@ input {
 
 .Threemenus li span {
   position: relative;
-  border: 1px solid #9356dc;
+  border: 1px solid #9356DC;
   border-radius: 50%;
   margin-left: -1.5rem;
   padding: 0.5rem 1rem;
-  background-color: #9356dc;
+  background-color: #9356DC;
   color: #F6F6F6;
 }
 
