@@ -5,6 +5,7 @@
 $Primary-color: #FF79DA;
 $Secondary-color: #9356DC;
 $Third-color: #99E2D0;
+$Fourth-color: #353535;
 
 
 .logo {
@@ -29,10 +30,6 @@ $Third-color: #99E2D0;
 }
 
 
-* {
-    box-sizing: border-box;
-}
-
 body {
     max-width: 1440px;
     margin: 0px;
@@ -47,7 +44,7 @@ body {
         @include flex-center;
         position: fixed;
         opacity: 0.9;
-        background: #353535;
+        background: $Fourth-color;
         inset: 0;
         z-index: 1;
         height: 100vh;
@@ -404,6 +401,10 @@ input {
 }
 
 .description-icon {
+    color: black;
+}
+
+.description-icon {
     i {
         position: absolute;
         right: 4rem;
@@ -531,7 +532,7 @@ footer {
     }
     
     .fa-location-dot{
-        color: #353535;
+        color: $Fourth-color;
         font-size: min(1.5rem, 2vw);
         padding-left: 3rem;
     }
