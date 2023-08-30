@@ -173,6 +173,9 @@ hr {
 .Détails {
   width: 100%;
   background-color: #FFFFFF;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
 }
 
 .Détails h4 {
