@@ -51,7 +51,6 @@ body .loader span {
   }
   to {
     transform: translate3d(20rem, -10rem, 0) rotate(-20deg) scale(1.5);
-    text-shadow: 40px red;
     opacity: 0;
   }
 }
